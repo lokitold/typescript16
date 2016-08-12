@@ -1,10 +1,21 @@
 /**
  * Created by victor on 05/08/16.
  */
-var a:number = 9;
-a += 4;
 
-function mostrar(b:string) :void{
-    console.log(b);
+class User
+{
+    id: number;
+    name: string;
+    email: string;
+    hobbies: Array<string>;
+
+    constructor(id: number, name: string, email: string, hobbies: Array<string>)
+    {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.hobbies = hobbies;
+    }
 }
-mostrar('hola');
+var user = new User(1, "iparra", "iparra@mail.com", ["Family", "Program"]);
+console.log(user);
